@@ -1,0 +1,57 @@
+[
+    {
+        "_id":"1",
+        "upVotes": 3,
+        "downVotes": 2,
+        "noOfAnswers": 2,
+        "questionTitle": "what is a function",
+        "questionBody": "It meant to be",
+        "questionTags": ["java","node js", "react js"],
+        "userPosted": "dilraj",
+        "askedOn": "jan 1",
+        "userId": 1,
+        "answer": [{
+            "answerBody": "Answer",
+            "userAnsered": "kumar",
+            "anseredOn": "jan 2",
+            "userId": 2
+        }]
+    },
+    {
+      "_id":"2",
+      "upVotes": 3,
+      "downVotes": 2,
+      "noOfAnswers": 1,
+      "questionTitle": "what is a character",
+      "questionBody": "It meant to be",
+      "questionTags": ["java","node js", "react js"],
+      "userPosted": "happy",
+      "askedOn": "jan 10",
+      "userId": 2,
+      "answer": [{
+        "answerBody": "Answertwo",
+        "userAnsered": "singh",
+        "anseredOn": "jan 2",
+        "userId": 1
+    }]
+
+  },
+  {
+    "_id":"3",
+    "upVotes": 2,
+    "downVotes": 2,
+    "noOfAnswers": 10,
+    "questionTitle": "what is a secs",
+    "questionBody": "It meant to be",
+    "questionTags": ["java","node js", "react js"],
+    "userPosted": "naughty",
+    "askedOn": "pluto 10",
+    "userId": 3,
+      "answer": [{
+        "answerBody": "Answertwo",
+        "userAnsered": "singh",
+        "anseredOn": "jan 2",
+        "userId": 5
+    }]
+}
+]
