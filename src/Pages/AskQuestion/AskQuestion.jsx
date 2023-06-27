@@ -19,8 +19,8 @@ export default function AskQuestion() {
   
   const handleSubmit = (e)=>{
      e.preventDefault();
-     dispatch(askQuestion({ questionTitle, questionBody, questionTags, userPosted: User.result.name, userId: User.result._id}, navigate))
-     console.log(User.result._id)
+     dispatch(askQuestion({ questionTitle, questionBody, questionTags, userPosted: User?.result?.name, userId: User?.result?._id}, navigate))
+    //  console.log(User.result._id)
   }
    
   return (

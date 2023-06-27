@@ -27,7 +27,7 @@ const DisplayAnswer = ({ question, handleShare }) => {
               </button>
               {
                 // console.log(ans.userId)
-                User.result._id === ans.userId &&
+                User?.result?._id === ans.userId &&
                 <button type="button" onClick={()=>handleDelete(ans._id, question.noOfAnswers)}>
                 Delete
                 </button>

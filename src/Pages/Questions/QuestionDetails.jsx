@@ -30,7 +30,7 @@ export default function QuestionDetails() {
       navigate('/')
     }
     else{
-      dispatch(postAnswer({_id, noOfAnswers: answerLength+1, answerBody, userAnswered: User.result.name, userId: User?.result?._id}))
+      dispatch(postAnswer({_id, noOfAnswers: answerLength+1, answerBody, userAnswered: User?.result?.name, userId: User?.result?._id}))
     }
    }
 
@@ -44,11 +44,11 @@ export default function QuestionDetails() {
   }
 
   const handleupVote = () => {
-    dispatch(voteQuestion(_id,"upVote",User.result._id));
+    dispatch(voteQuestion(_id,"upVote",User?.result?._id));
   }
 
   const handledownVote = () => {
-    dispatch(voteQuestion(_id,"downVote",User.result._id));
+    dispatch(voteQuestion(_id,"downVote",User?.result?._id));
   }
 
   return (
