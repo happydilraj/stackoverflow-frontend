@@ -30,7 +30,7 @@ export default function QuestionDetails() {
       navigate('/')
     }
     else{
-      dispatch(postAnswer({_id, noOfAnswers: answerLength+1, answerBody, userAnswered: User.result.name, userId: User.result._id}))
+      dispatch(postAnswer({_id, noOfAnswers: answerLength+1, answerBody, userAnswered: User.result.name, userId: User?.result?._id}))
     }
    }
 
@@ -80,7 +80,7 @@ export default function QuestionDetails() {
                         <div>
                           <button type="button" onClick={handleShare}>Share</button>
                           {
-                            User.result._id === question.userId &&
+                            User?.result?._id === question.userId &&
                             <button type="button" onClick={handleDelete}>Delete</button>
                             
                           }
