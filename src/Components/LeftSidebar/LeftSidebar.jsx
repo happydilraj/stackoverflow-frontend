@@ -40,6 +40,14 @@ export default function LeftSidebar() {
             >
               <p>Users</p>
             </NavLink>
+            <NavLink
+              to="/Subscription"
+              className="side-nav-links"
+              activeclassname="active"
+              style={{ paddingLeft: "40px" }}
+            >
+              <p>Subscription</p>
+            </NavLink>
         </div>
       </nav>
     </div>
