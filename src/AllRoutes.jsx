@@ -8,6 +8,7 @@ import DisplayQuestion from './Pages/Questions/DisplayQuestion'
 import { Tags } from './Pages/Tags/Tags'
 import  Users from './Pages/Users/Users'
 import  {UserProfile} from './Pages/UserProfile/UserProfile'
+import  {Subscription} from './Pages/Subscription/Subscription'
 
 export default function AllRoutes() {
   return (
@@ -22,6 +23,7 @@ export default function AllRoutes() {
         <Route exact path="/Tags" element={<Tags />} />
         <Route exact path="/Users" element={<Users />} />
         <Route exact path="/Users/:id" element={<UserProfile />} />
+        <Route exact path="/Subscription" element={<Subscription />} />
 
           
     </Routes>

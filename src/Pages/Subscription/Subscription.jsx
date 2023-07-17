@@ -4,8 +4,7 @@ import './Subscription.css'
 import gold from '../../assets/gold.jpg'
 import silver from '../../assets/silver.jpg'
 import bronze from '../../assets/bronze.jpg'
-import { useDispatch, useSelector } from "react-redux";
-import { setTotalQuestions } from "../../actions/totalQuestionParticularUser";
+import {  useSelector } from "react-redux";
 
 
 export const Subscription = () => {
