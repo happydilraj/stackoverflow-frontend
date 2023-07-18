@@ -29,8 +29,8 @@ export const Subscription = () => {
                 <div className="card-img">
                     <img src={bronze} alt="bronze" width="100%" height="100%"/>
                 </div>
-                <h5>Unlimited Questions</h5>
-                <p className="amount">Rs.1000/month</p>
+                <h5>1 Questions</h5>
+                <p className="amount">Rs.10/month</p>
                 <button className="btns btn-bronze">Apply</button>
             </div>
         </div>
@@ -41,8 +41,8 @@ export const Subscription = () => {
                     <img src={silver} alt="silver"
                     width="100%" height="100%" />
                 </div>
-                <h5>Unlimited Questions</h5>
-                <p className="amount">Rs.1000/month</p>
+                <h5>5 Questions</h5>
+                <p className="amount">Rs.100/month</p>
                 <button className="btns btn-silver">Apply</button>
             </div>
         </div>
