@@ -4,14 +4,10 @@ import './Subscription.css'
 import gold from '../../assets/gold.jpg'
 import silver from '../../assets/silver.jpg'
 import bronze from '../../assets/bronze.jpg'
-import {  useSelector } from "react-redux";
+import './Subscription.css'
 
 
 export const Subscription = () => {
-
-    const totalQuestions = useSelector((state) => state.totalQuestionsReducer);
-    console.log(totalQuestions)
-
 
   return (
     <div className="home-container-1">
@@ -26,48 +22,44 @@ export const Subscription = () => {
         >
           Subscription
         </h1>
-        <div className="cards" style={{marginTop: '30px'}}>
-          <div className="row row-cols-1 row-cols-md-3 g-4">
-            <div className="col">
-              <div className="card h-100">
-                <img src={bronze} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title" style={{display: 'flex', justifyContent: 'center'}}>1 Question/day</h5>
-                  <p style={{display: 'flex', justifyContent: 'center'}}>Free plan</p>
-                  <div className="d-flex justify-content-center">
-                    <button className="btn" style={{backgroundColor: 'rgb(238, 193, 168)'}}>Apply</button>
-                  </div>
-                  
+        
+        <div className="three-cards">
+        <div className="cards">
+            <div className="card">
+                <div className="card-img">
+                    <img src={bronze} alt="bronze" width="100%" height="100%"/>
                 </div>
-              </div>
+                <h5>Unlimited Questions</h5>
+                <p className="amount">Rs.1000/month</p>
+                <button className="btns btn-bronze">Apply</button>
             </div>
-            <div className="col">
-              <div className="card h-100">
-                <img src={silver} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title" style={{display: 'flex', justifyContent: 'center'}}>5 Questions/day</h5>
-                  <p style={{display: 'flex', justifyContent: 'center'}}>Rs. 100/month</p>
-                  <div className="d-flex justify-content-center">
-                    <button className="btn" style={{backgroundColor: 'rgb(181, 181, 181)'}}>Apply</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card h-100">
-                <img src={gold} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title" style={{display: 'flex', justifyContent: 'center'}}>Unlimited Questions</h5>
-                  <p style={{display: 'flex', justifyContent: 'center'}}>Rs. 1000/month</p>
-                  <div className="d-flex justify-content-center">
-                    <button className="btn" style={{backgroundColor: 'rgb(239, 197, 101)'}}>Apply</button>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
+
+        <div className="cards">
+            <div className="card">
+                <div className="card-img">
+                    <img src={silver} alt="silver"
+                    width="100%" height="100%" />
+                </div>
+                <h5>Unlimited Questions</h5>
+                <p className="amount">Rs.1000/month</p>
+                <button className="btns btn-silver">Apply</button>
+            </div>
+        </div>
+
+        <div className="cards">
+            <div className="card">
+                <div className="card-img">
+                    <img src={gold} alt="gold" 
+                    width="100%" height="100%"/>
+                </div>
+                <h5>Unlimited Questions</h5>
+                <p className="amount">Rs.1000/month</p>
+                <button className="btns btn-gold">Apply</button>
+            </div>
+        </div>
+        </div>
+
       </div>
     </div>
   );

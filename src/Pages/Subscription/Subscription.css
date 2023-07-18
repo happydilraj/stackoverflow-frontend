@@ -1,0 +1,48 @@
+.three-cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.cards{
+    border: 1px solid rgb(225, 209, 209);
+    display: flex;
+    width: 31%;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.card h5{
+    display: flex;
+    justify-content: center;
+}
+
+.amount{
+    display: flex;
+    justify-content: center;
+}
+
+.btns{
+    display: block;
+    margin: auto;
+    border: 1px solid rgb(225, 209, 209);
+    cursor: pointer;
+    
+}
+
+.btn-bronze{
+    background-color: #eec1a8;
+}
+.btn-siver{
+    background-color: #b5b5b5;
+}
+.btn-gold{
+    background-color: #efc565;
+}
+
+.card-img image{
+    min-width: 100%;
+    min-height: 100%;
+   object-fit:cover;
+}
