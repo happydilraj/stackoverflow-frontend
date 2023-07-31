@@ -9,7 +9,7 @@ import thunk from 'redux-thunk'
 import Reducers from './reducers'
 import Kommunicate from "@kommunicate/kommunicate-chatbot-plugin";
 
-Kommunicate.init("2946d11aa8a208820361195ecfef3e096", {
+Kommunicate.init(, {
   automaticChatOpenOnNavigation: true,
   popupWidget: true
 });
