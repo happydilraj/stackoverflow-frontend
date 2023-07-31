@@ -9,7 +9,7 @@ import thunk from 'redux-thunk'
 import Reducers from './reducers'
 import Kommunicate from "@kommunicate/kommunicate-chatbot-plugin";
 
-Kommunicate.init(, {
+Kommunicate.init(process.env.REACT_APP_COMMUNICATE_ID, {
   automaticChatOpenOnNavigation: true,
   popupWidget: true
 });
